@@ -1,15 +1,9 @@
-# Vortigern
-[![Build Status](https://travis-ci.org/barbar/vortigern.svg?branch=master)](https://travis-ci.org/barbar/vortigern)
-[![Dependency Status](https://david-dm.org/barbar/vortigern.svg)]()
-[![devDependency Status](https://david-dm.org/barbar/vortigern/dev-status.svg)]()
-[![Code Climate](https://codeclimate.com/github/barbar/vortigern/badges/gpa.svg)](https://codeclimate.com/github/barbar/vortigern)
-[![GitHub issues](https://img.shields.io/github/issues/barbar/vortigern.svg)](https://github.com/barbar/vortigern/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/barbar/vortigern/develop/LICENSE)
+# FoodJets Development
+
 ___
 
-<img src="https://barbaruploads.s3.amazonaws.com/bicoz/vortigern.png" width="100%" />
 
-**Vortigern** is our opinionated boilerplate for crafting universal web applications by using modern technologies like TypeScript, React and Redux.
+**FoodJets** is our opinionated boilerplate for crafting universal web applications by using modern technologies like TypeScript, React and Redux.
 
 [![TypeScript](https://barbaruploads.s3.amazonaws.com/bicoz/typescript.png)](https://www.typescriptlang.org/) 
 [![React](https://barbaruploads.s3.amazonaws.com/bicoz/react.png)](https://github.com/facebook/react) 
@@ -17,7 +11,7 @@ ___
 
 
 ## Libraries
-Vortigern uses the following libraries and tools:
+Foodjets uses the following libraries and tools:
 
 #### Core
 - [TypeScript](https://www.typescriptlang.org/)
@@ -88,14 +82,14 @@ Vortigern uses the following libraries and tools:
 ```bash
 .
 ├── build                       # Built, ready to serve app.
-├── config                      # Root folder for configurations.
+├── env                     # Root folder for configurations.
 │   ├── test                    # Test configurations.
 │   ├── types                   # Global type definitions, written by us.
 │   ├── webpack                 # Webpack configurations.
 │   └── main.ts                 # Generic App configurations.
 ├── node_modules                # Node Packages.
 ├── src                         # Source code.
-│   ├── app                     # App folder.
+│   ├── common                    # Common folder.
 │   │ ├── components            # React Components.
 │   │ ├── containers            # React/Redux Containers.
 │   │ ├── helpers               # Helper Functions & Components.
@@ -104,8 +98,10 @@ Vortigern uses the following libraries and tools:
 │   │ │   ├── reducers.ts       # Main reducers file to combine them.  
 │   │ │   └── store.ts          # Redux store, contains global app state.    
 │   │ └── routes.tsx            # Routes.
-│   ├── client.tsx              # Entry point for client side rendering.
-│   └── server.tsx              # Entry point for server side rendering.
+│   ├── client
+│    │  ├──client.tsx           # Entry point for client side rendering.
+│   └── server 
+│            ├──server.tsx              # Entry point for server side rendering.
 ├── typings                     # Type definitions installed with typings.              
 ├── .dockerignore               # Tells docker which files to ignore.
 ├── .gitignore                  # Tells git which files to ignore.
@@ -168,16 +164,12 @@ $ typings install <package> --save
 
 Vortigern is released under the [MIT license](LICENSE). 
 
-The image in this README belongs to [hhvferry.com](http://www.hhvferry.com/vortscrap.html).
+
 
 ___
 
-## [Barbar Startup Factory](https://www.barbar.com.tr/?ref=vortigern)
 
-<a target="_blank" href="https://barbar.digital/?ref=vortigern-barbar-logo"><img src="https://barbaruploads.s3.amazonaws.com/bicoz/logo2x.png" height="55px" /></a>
 
 We help startups start and stay started by helping them plan, strategize, fund and execute their vision. 
 
-You can contact us at [hey@barbar.digital](mailto:hey@barbar.digital)
 
-Be sure to check out available [jobs at Barbar](https://github.com/barbar/hr).
